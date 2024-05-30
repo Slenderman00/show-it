@@ -1,5 +1,15 @@
 import "./gridDistributionStyle.css"
 
+export function Distribute100(props) {
+    return (
+        <>
+            <div className="grid-0-100 grid-item">
+                {props.one}
+            </div>
+        </>
+    )
+}
+
 export function Distribute25252525(props) {
     return (
         <>

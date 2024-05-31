@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-image: url('/background.png');
+    background-color: #ECEBEB;
     background-repeat: no-repeat;
     background-size: 100vw;
     background-position-y: bottom;

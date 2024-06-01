@@ -68,8 +68,8 @@ Compliance
 • Ensure the development process and solution comply with relevant laws and 
 regulations.
 • Follow industry standards and guidelines, such as ISO 27001 and GDPR.
-Conclusion
-By following to these security practices and standards, we ensure our new solution is 
-developed with high security standards, protecting our organization and users from potential 
-threats. This fosters trust and ensures a reliable platform for sharing information in the 
-office
+Conclusion and final words
+In recent years tech companies designate a specific role to a team of developers, who will follow up some of these points.
+The role is called a security champion and some of the tasks include creating a security culture within the team, but also throughout the organization, if there are many teams with their own security champion.
+They follow up on dependency updates, tasks related to security and in general assuring that the team is following the desired security requirements. The security champion does not dedicate all their time to security as they are developers as well, but they help assign security tasks within the team so that security is a part of the development cycle and they are also a point of contact for the organization's security department in case of emergencies.
+By following these security practices and standards, we ensure our new solution is developed with high security standards, protecting our organization and users from potential threats. This fosters trust and ensures a reliable platform for sharing information in the office. We also believe that assigning a security champion would help enforce the best practices and standards we have set. 

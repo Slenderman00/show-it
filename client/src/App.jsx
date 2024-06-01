@@ -1,10 +1,9 @@
 import './App.css'
-import './NavbarStyle.css'
 import Grid from './components/grid/cssGrid'
 import { Distribute25252525, Distribute5050, Distribute2575, Distribute255025, Distribute100 } from './components/grid/distribution/gridDistribution'
 import Logo from './components/logo/logo'
 import Infotext from './components/infotext/infotext'
-import Navbar from './components/Navbar'
+import Navbar from './components/navbar/Navbar'
 
 
 

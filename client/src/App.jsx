@@ -1,8 +1,13 @@
 import './App.css'
+import './NavbarStyle.css'
 import Grid from './components/grid/cssGrid'
 import { Distribute25252525, Distribute5050, Distribute2575, Distribute255025, Distribute100 } from './components/grid/distribution/gridDistribution'
 import Logo from './components/logo/logo'
 import Infotext from './components/infotext/infotext'
+import Navbar from './components/Navbar'
+
+
+
 
 function App() {
   return (
@@ -10,7 +15,7 @@ function App() {
       <Grid>
         <Distribute2575
           one={<Logo/>}
-          two={<div  style={{backgroundColor: "red"}}>Header</div>}
+          two={<Navbar/>}
         />
         <Distribute100
           one={

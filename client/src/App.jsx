@@ -8,7 +8,6 @@ import {
   Distribute100,
 } from "./components/grid/distribution/gridDistribution";
 import Logo from "./components/logo/logo";
-import Infotext from "./components/infotext/infotext";
 import Navbar from "./components/navbar/navbar";
 import Home from "./pages/home";
 

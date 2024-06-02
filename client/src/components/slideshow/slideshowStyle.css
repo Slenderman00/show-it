@@ -1,0 +1,19 @@
+.slideshow {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 800px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.slide-button {
+    font-size: 100px;
+    background: transparent;
+    border: none;
+}

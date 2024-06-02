@@ -17,8 +17,6 @@ export default function Slideshow(props) {
             setBgIndex(0)
         }
 
-        console.log(bgIndex)
-
         updateBackground()
     }
 
@@ -28,8 +26,6 @@ export default function Slideshow(props) {
         if(bgIndex <= 0) {
             setBgIndex(props.slides.length - 1)
         }
-        
-        console.log(bgIndex)
 
         updateBackground()
     }

@@ -12,6 +12,8 @@ It functions like this:
 sequenceDiagram
 loop  Page fetch
 Display->>Show-IT: Fetch pages
+Show-IT->>Database: Fetch pages
+Database->>Show-IT: Pages
 Show-IT->>Display: Pages
 end
 ```

@@ -19,7 +19,7 @@ To secure this traffic a API-token system must be implemented, All displays will
 Like this:
 ```mermaid
 graph TD
-A[Client] -- Token --> B{Is API-token valid}
+A[Client] -- Token --> B{Is API-token valid?}
 B -- NO --> C[Return 500 access denied]
 B -- YES --> D[Return pages]
 D --Pages--> A
@@ -31,7 +31,7 @@ This page is used to create new displays. Here you can generate new API keys and
 The authentication on this endpoint will function like this:
 ```mermaid
 graph TD
-A[User] -- Login information --> B{Is Login information valid}
+A[User] -- Login information --> B{Is Login information valid?}
 B -- Username --> C((DATABASE))
 C -- Hash --> B
 B -- Valid --> D[JWT-generator]

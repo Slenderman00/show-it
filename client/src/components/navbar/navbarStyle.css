@@ -12,7 +12,11 @@
   display: flex;
 }
 
-.navbar ul li {
+.selected {
+  background-color: #7dbeab;
+}
+
+.navbar-button {
   margin-right: 20px;
   padding: 16px 20px;
   font-size: 22px;
@@ -20,6 +24,6 @@
   height: 22px;
 }
 
-.navbar ul li:hover {
+.navbar-button:hover {
   background-color: #7dbeab;
 }

@@ -1,22 +1,31 @@
 import "./navbarStyle.css";
-import React, { useState } from "react";
+import { useState } from "react";
 
 function Navbar(props) {
   const [activeView, setActiveView] = useState(<></>);
 
-  const changeView = (view) => {
+  const changeView = (object) => {
     {
-      props.viewCallback(view);
+      props.viewCallback(object.view);
+      setActiveView(object.title)
     }
   };
+
+  const Title = (object) => {
+    let selected = activeView == object.title
+
+    return(
+      <div className={selected ? "navbar-button selected" : "navbar-button"}>{object.title}</div>
+    )
+  }
 
   return (
     <div>
       <nav className="navbar">
         <ul>
           {props.content.map((object) => (
-            <li key={object.title} onClick={() => changeView(object.view)}>
-              {object.title}
+            <li key={object.title} onClick={() => changeView(object)}>
+              {Title(object)}
             </li>
           ))}
         </ul>

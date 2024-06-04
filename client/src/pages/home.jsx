@@ -54,7 +54,7 @@ export default function Home() {
         }
         two={
         <Slideshow 
-            slides={['/stock1.jpg', '/stock2.png', '/stock3.jpg']}
+            slides={['/show-it/stock1.jpg', '/show-it/stock2.png', '/show-it/stock3.jpg']}
         />
         }
       />

@@ -56,7 +56,7 @@ Authentication on all user endpoints will function like this:
 graph TD
 A[User] -- Login information --> B{Is Login information valid?}
 B -- Username --> C((DATABASE))
-C -- Hash --> B
+C -- Hash + Salt --> B
 B -- Valid --> D[JWT-generator]
 B -- Invalid: 500 --> A
 D -- Fetch JWT key --> E(secret_key.txt)

@@ -12,11 +12,15 @@ It functions like this:
 sequenceDiagram
 loop  Page fetch
 Display->>Show-IT: Fetch pages
-Show-IT->>Database: Fetch pages
-Database->>Show-IT: Pages
 Show-IT->>Display: Pages
 end
+loop Database fetch: Every
+Show-IT->>Database: Fetch pages
+Database->>Show-IT: Pages
+end
 ```
+> Note: The Show-IT server periodically fetches data and caches it to reduce strain on the database.
+
 To secure this traffic a API-token system must be implemented, All displays will be given an API-token that must be used to access a presentation. 
 Like this:
 ```mermaid

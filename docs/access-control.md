@@ -18,6 +18,8 @@ Our goal with the authentication architecture is to find a design that consumes 
 This allows us to run multiple parallel instances of the service without overloading the database,
 this is favorable since it helps avoiding database related race conditions and other challenges that comes with having multiples of the same database.
 
+
+
 ## The information display endpoint
 This is the endpoint used by devices to render relevant data. 
 It functions like this:
@@ -45,6 +47,8 @@ D --Pages--> A
 D --> E((Database))
 E --> D
 ```
+
+
 ## User authentication
 Authentication on all user endpoints will function like this:
 #### Login
@@ -74,9 +78,10 @@ B-->C(secret_key.txt)
 C-->B
 B-- Valid -->E{Does the request require DATABASE?}
 B-- Invalid: 500 --> A
-E -- No: Data: 200 --> A
-E -- Yes: Fetch data --> G((Database))
-G -- Data: 200 --> A
+E -- No --> O[Data: 200]
+O -- Data: 200 --> A
+E -- Yes --> G((Database))
+G -- Data --> O
 ```
 > Note: we only fetch data from the database if necessary
 > This allows the application to scale more easily. 

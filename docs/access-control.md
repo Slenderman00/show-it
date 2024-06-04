@@ -28,3 +28,17 @@ E --> D
 ```
 ### The information display management page
 This page is used to create new displays. Here you can generate new API keys and configure displays.
+The authentication on this endpoint will function like this:
+```mermaid
+graph TD
+A[User] -- Login information --> B{Is Login information valid}
+B -- Username --> C((DATABASE))
+C -- Hash --> B
+B -- Valid --> D[JWT-generator]
+B -- Invalid: 500 --> A
+D -- Fetch JWT key --> E(secret_key.txt)
+E -- Key --> D
+D -- Valid JWT --> A
+```
+
+

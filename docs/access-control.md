@@ -29,7 +29,7 @@ loop  Page fetch
 Display->>Show-IT: Fetch pages
 Show-IT-->>Display: Pages
 end
-loop Database fetch: Every
+loop Database fetch
 Show-IT->>Database: Fetch pages
 Database-->>Show-IT: Pages
 end

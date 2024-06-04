@@ -26,4 +26,5 @@ D --Pages--> A
 D --> E((Database))
 E --> D
 ```
-
+### The information display management page
+This page is used to create new displays. Here you can generate new API keys and configure displays.

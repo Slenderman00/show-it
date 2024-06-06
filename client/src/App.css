@@ -6,4 +6,5 @@ body {
     background-size: 100vw;
     background-position-y: bottom;
     height: 100vh!important;
+    background-attachment: fixed;
 }

@@ -12,49 +12,43 @@ import Slideshow from "../components/slideshow/slideshow";
 export default function Home() {
   return (
     <>
-      <Distribute100
-        one={
-          <>
-            <br />
-            <br />
-          </>
-        }
-      />
       <Distribute2575
         one={
           <Infotext>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            vulputate, nulla vitae sollicitudin fringilla, odio tellus efficitur
-            lacus, at sagittis neque dui vitae erat. Vivamus vel cursus felis.
-            Praesent nec vulputate nunc, nec porta magna. Proin elementum in
-            ante vel posuere. Proin a varius augue. Nunc ut dignissim diam.
-            Curabitur odio leo, laoreet ut mollis ac, efficitur eget mauris.
-            Cras suscipit sodales nibh, a tincidunt quam sodales in. Cras turpis
-            quam, accumsan ac pretium feugiat, congue non metus. Nam vitae
-            elementum quam. Maecenas ultrices dui in lectus placerat tincidunt.
-            Duis eu auctor turpis. Nam et est risus. Pellentesque turpis sem,
-            consequat sit amet metus in, congue pharetra justo. Nam sed leo
-            lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Etiam ornare, purus nec posuere pharetra, odio urna rhoncus lectus,
-            ac venenatis arcu turpis vel urna. Cras ex mi, eleifend vitae
-            blandit vitae, sollicitudin eu mauris. Pellentesque habitant morbi
-            tristique senectus et netus et malesuada fames ac turpis egestas.
-            Cras mi lectus, volutpat vel consectetur id, posuere sed ipsum. Cras
-            iaculis porta magna, molestie vehicula massa condimentum ut.
-            Suspendisse ullamcorper, tortor id dapibus porttitor, magna justo
-            consequat quam, a dignissim nisi risus in augue. In neque lorem,
-            sagittis sit amet augue ut, vehicula congue dolor. Class aptent
-            taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-            himenaeos. Sed a augue eu metus semper congue vitae et risus. Mauris
-            consequat lorem ac consectetur facilisis. Quisque ac mi molestie,
-            convallis ipsum at, volutpat neque. Proin id tincidunt nisi, vitae
-            pulvinar elit. Cras eget diam posuere, rutrum neque id, laoreet
-            lacus.
+            <h3 style={{fontWeight: "bold"}}>Welcome to our app, Show_IT!</h3>
+          Show it is an app designed to keep your office updated with the latest news, updates and 
+          announcements from your company. wether you be looking to stay informed about what happens 
+          in the office or birthdays. This app helps ensure you have a great overview on what is going on.
+          <br/>
+          <br/>
+          What our app does: <br/>
+          - Collects company posts: this app collects and displays posts within the company, from both 
+          the managers and the office workers. <br/>
+          - User-friendly Interface: Navigate the app effortlessly with our intuitive and easy to use 
+          design. 
+          <br/>
+          <br/>
+          Creating your own posts: <br/>
+          You have something important to share with the whole office? It's simple with the "create new" <br/>
+          - "Create new": Here you can create and publish your own posts. Share important announcements, 
+          product launches, company milestones or any other updates. Just click on "Create new", make the 
+          page like youd want and hit publish. 
+          <br/>
+          <br/>
+          Keeping an overview: <br/>
+          Keep track of what posts are shown where with the "overview" tab. <br/>
+          - "Overview": this section provides an overview over what posts are currently shown where, as 
+          well as all the posts currently in rotation.
+          <br/>
+          <br/>
+          Our app is designed to facilitate seamless communication and information sharing within the company. 
+          Join us today and experience the convenience of staying informed and connected.
           </Infotext>
         }
         two={
         <Slideshow 
-            slides={['/show-it/stock1.jpg', '/show-it/stock2.png', '/show-it/stock3.jpg']}
+            slides={['/show-it/sample_focus.jpg', '/show-it/sample_pyramid.jpg', '/show-it/sample_sample.jpg',
+             '/show-it/sample_Bday.jpg']}
         />
         }
       />

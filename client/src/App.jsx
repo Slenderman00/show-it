@@ -12,7 +12,8 @@ import Navbar from "./components/navbar/navbar";
 import Home from "./pages/home";
 
 import { useState } from "react";
-import Page1 from "./pages/page1";
+import CreateNew from "./pages/createNew";
+import Overview from "./pages/overview";
 
 function App() {
   const [view, setView] = useState(<Home />);
@@ -27,7 +28,8 @@ function App() {
               viewCallback={setView}
               content={[
                 { title: "Home", view: <Home /> },
-                { title: "Page 1", view: <Page1/>}
+                { title: "Create New", view: <CreateNew/>},
+                { title: "Overview", view: <Overview/>}
               ]}
             />
           }

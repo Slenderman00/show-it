@@ -4,6 +4,15 @@
   overflow: hidden;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  height: 80px;
+  border-bottom: solid #23715A 3px;
+}
+
+.dash {
+  color: #23715A;
+  font-size: 45px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .navbar ul {
@@ -13,17 +22,18 @@
 }
 
 .selected {
-  background-color: #7dbeab;
+  outline: solid #A6C0B8 5px;
 }
 
 .navbar-button {
+  margin-top: 5px;
   margin-right: 20px;
-  padding: 16px 20px;
+  margin-left: 20px;
+  padding: 10px 10px;
   font-size: 22px;
-  border-radius: 20px;
   height: 22px;
 }
 
 .navbar-button:hover {
-  background-color: #7dbeab;
+  outline: solid #A6C0B8 5px;
 }

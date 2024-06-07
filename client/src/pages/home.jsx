@@ -52,17 +52,6 @@ export default function Home() {
         />
         }
       />
-      <Distribute25252525
-        one={<div style={{ backgroundColor: "red" }}>test</div>}
-        two={<div style={{ backgroundColor: "green" }}>test</div>}
-        three={<div style={{ backgroundColor: "yellow" }}>test</div>}
-        four={<div style={{ backgroundColor: "purple" }}>test</div>}
-      />
-      <Distribute255025
-        one={<div style={{ backgroundColor: "purple" }}>test</div>}
-        two={<div style={{ backgroundColor: "green" }}>test</div>}
-        three={<div style={{ backgroundColor: "yellow" }}>test</div>}
-      />
     </>
   );
 }

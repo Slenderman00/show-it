@@ -1,0 +1,10 @@
+img.implement-this {
+    width: 100%;
+    height: auto;
+}
+
+.implement-this-title {
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}

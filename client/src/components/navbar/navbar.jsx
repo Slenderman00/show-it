@@ -1,5 +1,10 @@
 import "./navbarStyle.css";
 import { useState } from "react";
+import React from "react";
+
+function Dash() {
+  return(<div className="dash">-</div>)
+}
 
 function Navbar(props) {
   const [activeView, setActiveView] = useState(<></>);
@@ -23,10 +28,13 @@ function Navbar(props) {
     <div>
       <nav className="navbar">
         <ul>
-          {props.content.map((object) => (
-            <li key={object.title} onClick={() => changeView(object)}>
-              {Title(object)}
-            </li>
+          {props.content.map((object, index) => (
+              <React.Fragment key={object.title}>
+                <li onClick={() => changeView(object)}>
+                  {Title(object)}
+                </li>
+                {index !== props.content.length - 1 && <Dash />}
+              </React.Fragment>
           ))}
         </ul>
       </nav>

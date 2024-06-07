@@ -20,7 +20,7 @@ export default function CreateNew() {
         }
       />
       <Distribute255025
-        two={<ImplementThis src="/show-it/public/mockup_create.png"/>}
+        two={<ImplementThis src="/show-it/mockup_create.png"/>}
       />
     </>
   );

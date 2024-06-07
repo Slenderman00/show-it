@@ -20,7 +20,7 @@ export default function Overview() {
         }
       />
       <Distribute255025
-        two={<ImplementThis src="/show-it/public/mockup_overview.png"/>}
+        two={<ImplementThis src="/show-it/mockup_overview.png"/>}
       />
     </>
   );
